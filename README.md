@@ -63,7 +63,9 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 
 * **This ranking alone is not actionable** — knowing "Hospital 2 is worst" doesn't tell Operations *where inside* Hospital 2 to focus. This motivated the deeper ward-level and root-cause analysis in Categories 2 and 3.
 
-![Length of Stay by Hospital]([./images/dashboard_page1_overview.png](https://private-user-images.githubusercontent.com/255600653/636518508-a91356d5-1215-4cd1-9f95-fcbaf7a97c04.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODY3OTMxNDAsIm5iZiI6MTc4Njc5Mjg0MCwicGF0aCI6Ii8yNTU2MDA2NTMvNjM2NTE4NTA4LWE5MTM1NmQ1LTEyMTUtNGNkMS05Zjk1LWZjYmFmN2E5N2MwNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxNVQxMTIwNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ZjQyMWM2NTY0Mzk1YTllZGY4ODFjNjE1ZTY4ZDNhMTlkNzJkN2FhMTQ5MmVjYmU1YmM4OGE5YmFmY2RlZGFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.UPfpC423VpYpgSAeyqUMYSq8HeRYzwIBah7sIg3Dv6A))
+![Length of Stay by Hospital]([<p align="center">
+  <img src="[https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx](https://github.com/SaifGhonem/Hospital_LOS_Portfolio_Repo/issues/1#issue-5159127815)" width="300">
+</p>)
 
 ### Category 2: Ward & Department Case-Mix
 
