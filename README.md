@@ -42,7 +42,9 @@ Prior to modeling, a bucket-label corruption was identified and fixed: the range
 
 **Entity Relationship Diagram:**
 
-![Star Schema Data Model](data_model_star_schema.png)
+<p align="center">
+  ![Star Schema Data Model](data_model_star_schema.png)
+</p>
 
 <br>
 
