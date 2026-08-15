@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="320px" src="https://github.com/SaifGhonem/Hospital_LOS_Portfolio_Repo/issues/5#issue-5159235992" />
+  <img width="320px" alt="Image" src="https://github.com/user-attachments/assets/9e8aee06-69f5-4ff9-b5d5-bc3a79b3685d" />
 </div>
 
 # Project Background
@@ -68,7 +68,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 * **This ranking alone is not actionable** — knowing "Hospital 2 is worst" doesn't tell Operations *where inside* Hospital 2 to focus. This motivated the deeper ward-level and root-cause analysis in Categories 2 and 3.
 
 <p align="center">
-  <img src="https://github.com/SaifGhonem/Hospital_LOS_Portfolio_Repo/issues/1#issue-5159127815">
+  <img width="619" height="564" alt="Image" src="https://github.com/user-attachments/assets/55fcc05b-085a-4372-8602-ecf0d71ea40e" />
 </p>
 
 ### Category 2: Ward & Department Case-Mix
@@ -82,8 +82,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 * **Combining Hospital 2 and Ward S produces a larger gap than either factor alone** — 10.27 days above system average, compared to 7.94 (Hospital 2 alone) or 6.59 (Ward S alone). This compounding effect is the strongest single signal in the dataset and became the focus of the root-cause investigation.
 
 <p align="center">
-  <img src="https://github.com/SaifGhonem/Hospital_LOS_Portfolio_Repo/issues/2#issue-5159174946">
-</p>
+  <img width="599" height="293" alt="Image" src="https://github.com/user-attachments/assets/97bc566a-f3a7-410e-8cfc-b859473879c3" />
 
 ### Category 3: Root-Cause Validation — Hospital 2, Ward S
 
@@ -94,7 +93,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 * **The gap translates to approximately 22,100 recoverable bed-days per year**, calculated conservatively at half the observed 10.27-day gap multiplied by annual case volume — capacity directly reusable for new admissions if closed.
 
 <p align="center">
-  <img src="https://github.com/SaifGhonem/Hospital_LOS_Portfolio_Repo/issues/3#issue-5159184860">
+  <img width="702" height="547" alt="Image" src="https://github.com/user-attachments/assets/873e7a8f-9916-42ab-9381-b5956d672828" />
 </p>
 
 ### Category 4: Admission-Type Correction
@@ -108,7 +107,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 * **Emergency admissions, while still elevated, show the smallest gap of the three** — 37 vs. 30 days (+7) — meaning the visible symptom (ER congestion) is real, but the underlying driver is more closely tied to how Trauma and Urgent cases are managed *after* admission, not to ER intake volume itself. Surfacing this distinction is arguably the most valuable output of this analysis, since it redirects the fix toward the actual lever rather than the assumed one.
 
 <p align="center">
-  <img src="https://github.com/SaifGhonem/Hospital_LOS_Portfolio_Repo/issues/4#issue-5159186683">
+  <img width="702" height="548" alt="Image" src="https://github.com/user-attachments/assets/43c2180a-54f6-4899-9cfe-788041b3a1e2" />
 </p>
 
 <br>
