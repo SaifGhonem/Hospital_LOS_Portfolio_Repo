@@ -1,7 +1,3 @@
-<div align="center">
-  <img width="320px" src="https://github.com/user-attachments/assets/9e8aee06-69f5-4ff9-b5d5-bc3a79b3685d" />
-</div>
-
 # Project Background
 
 This project simulates a diagnostic analytics engagement for a multi-hospital operator whose Operations team flagged recurring ER congestion and suspected the root cause was insufficient ward capacity. As the data analyst on this engagement, the goal was to move the stakeholder from a vague symptom ("deliveries feel slow," in this case "wards feel full") to a specific, quantified, actionable root cause — following a structured discovery → diagnose → recommend process.
@@ -15,13 +11,13 @@ Insights and recommendations are provided on the following key areas:
 - **Category 3: Root-Cause Validation** — isolating the single worst-performing hospital-ward combination and ruling out patient severity as the cause
 - **Category 4: Admission-Type Correction** — testing the stakeholder's original ER-congestion assumption against the data directly
 
-The SQL queries used to inspect, clean, and model the data for this analysis can be found [here](01_cleaning_and_view.sql).
+The SQL queries used to inspect, clean, and model the data for this analysis can be found [here](./sql/01_cleaning_and_view.sql).
 
-Targeted diagnostic SQL queries (hospital, ward, department, severity, admission-type breakdowns) can be found [here](02_diagnostic_queries.sql).
+Targeted diagnostic SQL queries (hospital, ward, department, severity, admission-type breakdowns) can be found [here](./sql/02_diagnostic_queries.sql).
 
-An interactive Power BI dashboard used to report and explore length-of-stay trends can be found [here](dashboard.pbix).
+An interactive Power BI dashboard used to report and explore length-of-stay trends can be found [here](./dashboard/Hospital_LOS_Dashboard.pbix).
 
-The full written case study (executive summary, methodology, and recommendation) is available [here](Hospital_LOS_Case_Study.docx).
+The full written case study (executive summary, methodology, and recommendation) is available [here](./Hospital_LOS_Case_Study.docx).
 
 <br>
 
@@ -42,7 +38,7 @@ Prior to modeling, a bucket-label corruption was identified and fixed: the range
 
 **Entity Relationship Diagram:**
 
-![Star Schema Data Model](data_model_star_schema.png)
+![Star Schema Data Model](./images/data_model_star_schema.png)
 
 <br>
 
@@ -52,7 +48,7 @@ Prior to modeling, a bucket-label corruption was identified and fixed: the range
 
 Average length of stay across the hospital system is 31.9 days, but this figure masks a sharp concentration problem: **Hospital 2's Ward S runs 10.3 days longer than the system average**, driven by roughly 4,300 cases per year. This is not explained by patient severity — the gap holds across Extreme, Moderate, *and* Minor cases — which rules out the "we just treat sicker patients" explanation and points to an operational cause. It also **corrects the stakeholder's original assumption**: the team believed ER (Emergency) congestion was the driver, but Trauma and Urgent admissions actually show the larger delays at this ward. Closing even half this gap would free approximately **22,100 bed-days per year** for new admissions, using capacity that Operations can act on directly without cross-hospital escalation.
 
-![Dashboard Overview](dashboard_page1_overview.png)
+![Dashboard Overview](./images/dashboard_page1_overview.png)
 
 <br>
 
@@ -67,9 +63,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 
 * **This ranking alone is not actionable** — knowing "Hospital 2 is worst" doesn't tell Operations *where inside* Hospital 2 to focus. This motivated the deeper ward-level and root-cause analysis in Categories 2 and 3.
 
-<p align="center">
-  <img width="619" height="564" alt="Image" src="https://github.com/user-attachments/assets/55fcc05b-085a-4372-8602-ecf0d71ea40e" />
-</p>
+![Length of Stay by Hospital](./images/dashboard_page1_overview.png)
 
 ### Category 2: Ward & Department Case-Mix
 
@@ -81,9 +75,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 
 * **Combining Hospital 2 and Ward S produces a larger gap than either factor alone** — 10.27 days above system average, compared to 7.94 (Hospital 2 alone) or 6.59 (Ward S alone). This compounding effect is the strongest single signal in the dataset and became the focus of the root-cause investigation.
 
-<p align="center">
-  <img width="599" height="293" alt="Image" src="https://github.com/user-attachments/assets/97bc566a-f3a7-410e-8cfc-b859473879c3" />
-</p>
+![Length of Stay by Ward Type and Department](./images/dashboard_page1_overview.png)
 
 ### Category 3: Root-Cause Validation — Hospital 2, Ward S
 
@@ -93,9 +85,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 
 * **The gap translates to approximately 22,100 recoverable bed-days per year**, calculated conservatively at half the observed 10.27-day gap multiplied by annual case volume — capacity directly reusable for new admissions if closed.
 
-<p align="center">
-<img width="702" height="547" alt="Image" src="https://github.com/user-attachments/assets/873e7a8f-9916-42ab-9381-b5956d672828" />
-</p>
+![Root Cause Analysis — Severity Breakdown](./images/dashboard_page2_rootcause.png)
 
 ### Category 4: Admission-Type Correction
 
@@ -107,9 +97,7 @@ Average length of stay across the hospital system is 31.9 days, but this figure 
 
 * **Emergency admissions, while still elevated, show the smallest gap of the three** — 37 vs. 30 days (+7) — meaning the visible symptom (ER congestion) is real, but the underlying driver is more closely tied to how Trauma and Urgent cases are managed *after* admission, not to ER intake volume itself. Surfacing this distinction is arguably the most valuable output of this analysis, since it redirects the fix toward the actual lever rather than the assumed one.
 
-<p align="center">
-<img width="702" height="548" alt="Image" src="https://github.com/user-attachments/assets/43c2180a-54f6-4899-9cfe-788041b3a1e2" />
-</p>
+![Root Cause Analysis — Admission Type Breakdown](./images/dashboard_page2_rootcause.png)
 
 <br>
 
