@@ -11,13 +11,13 @@ Insights and recommendations are provided on the following key areas:
 - **Category 3: Root-Cause Validation** — isolating the single worst-performing hospital-ward combination and ruling out patient severity as the cause
 - **Category 4: Admission-Type Correction** — testing the stakeholder's original ER-congestion assumption against the data directly
 
-The SQL queries used to inspect, clean, and model the data for this analysis can be found [here](./sql/01_cleaning_and_view.sql).
+The SQL queries used to inspect, clean, and model the data for this analysis can be found [here](01_cleaning_and_view.sql).
 
-Targeted diagnostic SQL queries (hospital, ward, department, severity, admission-type breakdowns) can be found [here](./sql/02_diagnostic_queries.sql).
+Targeted diagnostic SQL queries (hospital, ward, department, severity, admission-type breakdowns) can be found [here](02_diagnostic_queries.sql).
 
-An interactive Power BI dashboard used to report and explore length-of-stay trends can be found [here](./dashboard/Hospital_LOS_Dashboard.pbix).
+An interactive Power BI dashboard used to report and explore length-of-stay trends can be found [here](dashboard.pbix).
 
-The full written case study (executive summary, methodology, and recommendation) is available [here](./Hospital_LOS_Case_Study.docx).
+The full written case study (executive summary, methodology, and recommendation) is available [here](Hospital_LOS_Case_Study.docx).
 
 <br>
 
@@ -38,7 +38,7 @@ Prior to modeling, a bucket-label corruption was identified and fixed: the range
 
 **Entity Relationship Diagram:**
 
-![Star Schema Data Model](./images/data_model_star_schema.png)
+![Star Schema Data Model](data_model_star_schema.png)
 
 <br>
 
@@ -48,7 +48,7 @@ Prior to modeling, a bucket-label corruption was identified and fixed: the range
 
 Average length of stay across the hospital system is 31.9 days, but this figure masks a sharp concentration problem: **Hospital 2's Ward S runs 10.3 days longer than the system average**, driven by roughly 4,300 cases per year. This is not explained by patient severity — the gap holds across Extreme, Moderate, *and* Minor cases — which rules out the "we just treat sicker patients" explanation and points to an operational cause. It also **corrects the stakeholder's original assumption**: the team believed ER (Emergency) congestion was the driver, but Trauma and Urgent admissions actually show the larger delays at this ward. Closing even half this gap would free approximately **22,100 bed-days per year** for new admissions, using capacity that Operations can act on directly without cross-hospital escalation.
 
-![Dashboard Overview](./images/dashboard_page1_overview.png)
+![Dashboard Overview](dashboard_page1_overview.png)
 
 <br>
 
