@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="2240" height="1120" alt="Image" src="https://github.com/user-attachments/assets/9e8aee06-69f5-4ff9-b5d5-bc3a79b3685d" />
+</p>
 # Project Background
 
 This project simulates a diagnostic analytics engagement for a multi-hospital operator whose Operations team flagged recurring ER congestion and suspected the root cause was insufficient ward capacity. As the data analyst on this engagement, the goal was to move the stakeholder from a vague symptom ("deliveries feel slow," in this case "wards feel full") to a specific, quantified, actionable root cause — following a structured discovery → diagnose → recommend process.
