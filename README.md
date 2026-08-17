@@ -19,7 +19,7 @@ The SQL queries used to inspect, clean, and model the data for this analysis can
 
 Targeted diagnostic SQL queries (hospital, ward, department, severity, admission-type breakdowns) can be found [here](sql/02_diagnostic_queries.sql).
 
-An interactive Power BI dashboard used to report and explore length-of-stay trends can be found [here]([dashboard/dashboard.pbix](https://app.powerbi.com/view?r=eyJrIjoiYmQ3ZWUxN2ItNDZmMS00ZTcyLTg3NGYtZWIzNDg4MjA1YjQ3IiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9&pageName=4256ed9b05875716eb32)).
+An interactive Power BI dashboard used to report and explore length-of-stay trends can be found [here](https://app.powerbi.com/view?r=eyJrIjoiYmQ3ZWUxN2ItNDZmMS00ZTcyLTg3NGYtZWIzNDg4MjA1YjQ3IiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9&pageName=4256ed9b05875716eb32).
 
 The full written case study (executive summary, methodology, and recommendation) is available [here](Hospital_LOS_Case_Study.docx).
 
